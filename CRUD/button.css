@@ -1,0 +1,52 @@
+.button{
+    border-style: outset;
+    border-radius: 4px;
+    height: 30px;
+    padding: 6px 11px ;
+    background-color: black;
+    color: rgb(211, 218, 211);
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: box-shadow .6s ease;
+
+}
+
+.button.blue{
+    background-color: rgb(2, 42, 28);
+    color: rgb(212, 204, 204);
+}
+
+button.green{
+    background-color: rgb(5, 58, 9);
+}
+
+button.red{
+    background-color: rgb(85, 5, 5);
+}
+
+.button.hover{
+    box-shadow: inset 200px 0 0 rgba(0, 0, 0, 0.733);
+}
+
+@media(max-width:550px){
+    .button.mobile{
+        color:transparent;
+        font-size:0;
+        width:50px;
+        height:50px;
+        border-radius: 50%;
+        position:fixed;
+        top: 90vh;
+        left: 80vw;
+    }
+    .button.mobile::before{
+        content: "+";
+        color:black;
+        font-size:2rem;
+        width:100%;
+        height:100%;
+    }
+}
+
+
+

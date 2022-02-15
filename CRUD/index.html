@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="records.css">
+    <link rel="stylesheet" href="modal.css">
+    <script src="main.js" defer> </script>
+    <title>Crud</title>
+</head>
+<body>
+    <header>
+        <h1 class="header-t">Cadastro de Clientes</h1>
+    </header>
+    <main>
+        <button type= "button" class="button blue mobile" id="cadastrarCliente"> Cadastro de Clientes </button>
+        <table class="records">
+            <thead>
+                <tr>
+                    <th> Nome</th>
+                    <th> CNPJ/CPF</th>
+                    <th> Cidade</th>
+                    <th> Email</th>
+                    <th> Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Leo Lopes</td>
+                    <td>01313393622</td>
+                    <td>Vicosa</td>
+                    <td>leo-llopes@hotmail.com</td>
+                    <td>
+                        <button type="button" class="button green">Editar</button>
+                        <button type="button" class="button red">Excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Leo Lopes</td>
+                    <td>01313393622</td>
+                    <td>Vicosa</td>
+                    <td>leo-llopes@hotmail.com</td>
+                    <td>
+                        <button type="button" class="button green">Editar</button>
+                        <button type="button" class="button red">Excluir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2> Novo Cliente </h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form class="modal-form">
+                    <input type="text" class="modal-field" placeholder="NOME DO CLIENTE">
+                    <input type="text" class="modal-field" placeholder="CNPJ/CPF">
+                    <input type="text" class="modal-field" placeholder="CIDADE">
+                    <input type="email" class="modal-field" placeholder="EMAIL">
+                </form>
+                <footer class="modal-footer">
+                    <button class="button green">Salvar</button>
+                    <button class="button red">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+    
+</body>
+</html>
